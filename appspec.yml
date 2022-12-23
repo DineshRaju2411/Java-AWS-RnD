@@ -4,8 +4,4 @@ os: linux
 files:
   - source: /
     destination: /var/www/javaapp/
-hooks:
-  ApplicationStart:
-    - location: server_start.sh
-      timeout: 200
- 
+
