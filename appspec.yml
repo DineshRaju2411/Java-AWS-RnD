@@ -1,0 +1,13 @@
+version: 0.0
+os: linux
+
+files:
+  - source: /
+    destination: /var/www/javaapp/
+hooks:
+  ApplicationStart:
+    - location: server_start.sh
+      timeout: 200
+  ApplicationStop:
+    - location: server_stop.sh
+      timeout: 200
